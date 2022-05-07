@@ -15,7 +15,8 @@ export default function App() {
             "name": "the batman",
             "year": 2022,
             "watched": true,
-            "stars": 5
+            "stars": 5,
+            "imdb": 'tt1877830'
         },
         {
             "name": "the book of boba fett",
@@ -35,6 +36,7 @@ export default function App() {
                     return <Item key={element.name} info={element}/>
                 })
             }
+            click to open imdb page
         </div>
     )
 }
