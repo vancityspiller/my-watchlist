@@ -6,6 +6,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     
     background: url(../src/images/crisp-paper-ruffles.png), #9cc1d3;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -20,7 +21,7 @@ body {
 
 .main {
     margin: auto;
-    width: 750px;
+    width: 550px;
 
     margin-top: 20px;
     text-align: center;
@@ -31,16 +32,30 @@ body {
     margin-bottom: 20px;
 }
 
+.list {
+    overflow: auto;
+    height: 75vh;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 .item {
     margin: auto;
-    width: 50%;
+    margin-top: 20px;
+    width: 90%;
     
     border-radius: 5px;
     height: 50px;
     line-height: 50px;
     vertical-align: middle;
     text-align: left;
-    margin-bottom: 3vh;
+}
+
+.item:first-child {
+    margin-top: 5px;
 }
 
 .watched {
