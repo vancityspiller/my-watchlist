@@ -7,6 +7,8 @@ export default function App() {
     // ------------------------------------------------------- //
 
     return (
-        <React.Fragment />
+        <div className='main'>
+            <span className='title'>my watchlist</span>
+        </div>
     )
 }

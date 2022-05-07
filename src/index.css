@@ -1,7 +1,21 @@
 body {
-  margin: 0;
-  font-family: 'Londrina Solid', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #9cc1d3;
+    margin: 0;
+    font-family: 'Londrina Solid', cursive;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    background: url(../src/images/crisp-paper-ruffles.png), #9cc1d3;
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5em;
 }
