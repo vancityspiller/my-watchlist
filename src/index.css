@@ -17,5 +17,37 @@ body {
 }
 
 .title {
-    font-size: 3.5em;
+    font-size: 4vw;
+    margin-bottom: 5vh;
+}
+
+.item {
+    margin: auto;
+    width: 50%;
+    
+    border-radius: 5px;
+    height: 7vh;
+    line-height: 7vh;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom: 3vh;
+}
+
+.watched {
+    outline: black solid 2px;
+}
+
+.unwatched {
+    outline: grey solid 2px;
+    color: grey;
+}
+
+.mName {
+    font-size: 1.4vw;
+    margin-left: 15px;
+}
+
+.mYear {
+    margin-left: 4px;
+    font-weight: lighter;
 }
