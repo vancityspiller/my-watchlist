@@ -8,17 +8,27 @@ body {
     background: url(../src/images/crisp-paper-ruffles.png), #9cc1d3;
 }
 
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #252525;
+}
+
 .main {
     margin: auto;
-    width: 50%;
+    width: 750px;
 
-    margin-top: 3vh;
+    margin-top: 20px;
     text-align: center;
 }
 
 .title {
-    font-size: 4vw;
-    margin-bottom: 5vh;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .item {
@@ -26,8 +36,8 @@ body {
     width: 50%;
     
     border-radius: 5px;
-    height: 7vh;
-    line-height: 7vh;
+    height: 50px;
+    line-height: 50px;
     vertical-align: middle;
     text-align: left;
     margin-bottom: 3vh;
@@ -37,13 +47,18 @@ body {
     outline: black solid 2px;
 }
 
+.watched:hover {
+    cursor: pointer;
+    outline-width: 4px;
+}
+
 .unwatched {
     outline: grey solid 2px;
     color: grey;
 }
 
 .mName {
-    font-size: 1.4vw;
+    font-size: 1.5em;
     margin-left: 15px;
 }
 
@@ -55,9 +70,9 @@ body {
 .mStars {
     float: right;
     margin-right: 15px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .mStar {
-    width: 1.2vw;
+    width: 0.8em;
 }
