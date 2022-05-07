@@ -16,6 +16,12 @@ export default function App() {
             "year": 2022,
             "watched": true,
             "stars": 5
+        },
+        {
+            "name": "the book of boba fett",
+            "year": 2022,
+            "watched": true,
+            "stars": 4
         }
     ];
 

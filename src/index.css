@@ -48,6 +48,16 @@ body {
 }
 
 .mYear {
-    margin-left: 4px;
+    margin-left: 5px;
     font-weight: lighter;
+}
+
+.mStars {
+    float: right;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.mStar {
+    width: 1.2vw;
 }
