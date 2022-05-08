@@ -91,3 +91,7 @@ body {
 .mStar {
     width: 0.8em;
 }
+
+.inputTitle {
+    margin-right: 10px;
+}

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Add from './Add';
 import Item from './Item';
 
 // ======================================================= //
@@ -9,7 +10,7 @@ export default function App() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios   .get('http://localhost:5000/api/list')
+        axios   .get('https://spiller.vcmp.net/api-wl/api/list')
                 .then(response => {
                     setData(response.data);
                 })
@@ -29,6 +30,7 @@ export default function App() {
             }
             </div>
             <div className='footer'>click to open imdb page</div>
+            <Add />
         </div>
     )
 }
