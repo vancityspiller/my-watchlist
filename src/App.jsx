@@ -1,30 +1,20 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import Item from './Item';
 
 // ======================================================= //
 
 export default function App() {
 
-    const data = [
-        {
-            "name": "dexter",
-            "year": 2006,
-            "watched": false,
-        },
-        {
-            "name": "the batman",
-            "year": 2022,
-            "watched": true,
-            "stars": 5,
-            "imdb": 'tt1877830'
-        },
-        {
-            "name": "the book of boba fett",
-            "year": 2022,
-            "watched": true,
-            "stars": 4
-        },
-    ];
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        axios   .get('http://localhost:5000/api/list')
+                .then(response => {
+                    setData(response.data);
+                })
+                .catch(e => console.log('ERR: Failed to fetch data'));
+    }, []);
 
     // ------------------------------------------------------- //
 

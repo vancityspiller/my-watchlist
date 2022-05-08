@@ -21,8 +21,8 @@ export default function Item({info}) {
             <span className='mYear'>{year}</span>
 
             {watched && <span className='mStars'>
-                {stArr.map(element => {
-                    return <img src={element === 'filled' ? StarFilled : Star} className='mStar'></img>
+                {stArr.map((element, idx) => {
+                    return <img key={idx} src={element === 'filled' ? StarFilled : Star} className='mStar'></img>
                 })}
             </span>}
         </div>
